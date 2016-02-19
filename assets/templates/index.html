@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">All users</div>
+    </div>
+    <div class="row" ng-repeat="user in users track by $index">
+        <div class="col-xs-12">
+            <div class="row panel">
+                <div class="col-xs-4">{{user.client_type}}</div>
+                <div class="col-xs-4">{{user.email}}</div>
+                <div class="col-xs-4">
+                    <button class="btn-success" ng-click="activateUser(user.client_id, $index)">Activate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
